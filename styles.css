@@ -1,0 +1,199 @@
+:root {
+    --primary-color: #0A84FF;
+    --background: linear-gradient(160deg, #1a1a1a 0%, #000000 100%);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-primary: #FFFFFF;
+    --text-secondary: #86868B;
+    --nav-hover: rgba(10, 132, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+    background: var(--background);
+    color: var(--text-primary);
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+h1.gradient-text {
+    background: linear-gradient(45deg, #32D74B, #0A84FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    background: var(--nav-hover);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a[href="#privacy"],
+nav a[href="#terms"] {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.policy-section {
+    margin: 2rem 0;
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.policy-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-block {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+p, li, h3, h4 {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+}
+
+li {
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+}
+
+footer {
+    margin-top: auto;
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0;
+    }
+    
+    .header-content {
+        padding: 0 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    h1.gradient-text {
+        font-size: 1.5rem;
+    }
+    
+    nav {
+        margin-top: 0.5rem;
+    }
+    
+    nav a {
+        margin: 0 0.5rem;
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .policy-section {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .policy-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-block {
+        padding: 1rem;
+    }
+}
+
+.content-block > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.policy-section:not(:first-child) {
+    margin-top: 3rem;
+}
