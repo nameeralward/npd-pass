@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Basic Reset */\
+body, h1, h2, p, ul, li \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\
+    line-height: 1.6;\
+    color: #333;\
+    background-color: #f9f9f9;\
+    padding: 1rem;\
+\}\
+\
+header \{\
+    text-align: center;\
+    background: #007aff;\
+    color: white;\
+    padding: 2rem 1rem;\
+    border-radius: 12px;\
+    margin-bottom: 2rem;\
+\}\
+\
+header h1 \{\
+    font-size: 2.5rem;\
+    margin-bottom: 0.5rem;\
+\}\
+\
+header p \{\
+    font-size: 1rem;\
+\}\
+\
+main \{\
+    max-width: 800px;\
+    margin: 0 auto;\
+    background: white;\
+    padding: 2rem;\
+    border-radius: 12px;\
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\
+\}\
+\
+main h2 \{\
+    font-size: 1.5rem;\
+    color: #007aff;\
+    margin-bottom: 1rem;\
+\}\
+\
+main ul \{\
+    margin-left: 1.5rem;\
+    list-style: disc;\
+\}\
+\
+main ul li \{\
+    margin-bottom: 0.5rem;\
+\}\
+\
+footer \{\
+    text-align: center;\
+    margin-top: 2rem;\
+    font-size: 0.875rem;\
+    color: #555;\
+\}\
+\
+footer p \{\
+    margin-top: 1rem;\
+\}\
+\
+a \{\
+    color: #007aff;\
+    text-decoration: none;\
+\}\
+\
+a:hover \{\
+    text-decoration: underline;\
+\}\
+}
