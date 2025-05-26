@@ -81,7 +81,7 @@ main {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin-bottom: 2.5rem;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 3rem;
     transition: box-shadow 0.2s;
 }
 
@@ -126,6 +126,7 @@ ul {
     font-size: 1.08rem;
     line-height: 1.7;
     color: var(--text-primary);
+    padding: 0.5rem 0.5rem;
 }
 
 .content-block em {
@@ -188,7 +189,7 @@ footer a:hover {
         max-width: 98vw;
     }
     .policy-section {
-        padding: 1.5rem 0.7rem;
+        padding: 1.5rem 1.2rem;
     }
 }
 
@@ -206,6 +207,6 @@ footer a:hover {
         font-size: 1.3rem;
     }
     .policy-section {
-        padding: 1.2rem 0.3rem;
+        padding: 1.2rem 0.7rem;
     }
 }
