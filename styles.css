@@ -136,6 +136,11 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+.content-block .business-address {
+    font-style: normal;
+    margin-bottom: 1.2rem;
+}
+
 a {
     color: var(--primary-color);
     text-decoration: underline;
@@ -165,8 +170,23 @@ footer p {
     font-size: 1rem;
 }
 
+footer .footer-legal-name {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
 footer .contact {
     margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem 0.5rem;
+}
+
+footer .footer-contact-sep {
+    color: var(--text-secondary);
+    user-select: none;
 }
 
 footer a {
